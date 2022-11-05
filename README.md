@@ -5,7 +5,6 @@
 API para buscar preços por produtos usando .NET 6, ASPNET WEB API e Selenium QA
 
 ### 🛠 Tecnologias
-- [React](https://pt-br.reactjs.org/)
 - [ASPNET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
 - [Selenium QA](https://www.selenium.dev/)
 - [Swagger](https://swagger.io/)

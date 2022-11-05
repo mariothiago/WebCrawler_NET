@@ -4,10 +4,11 @@ namespace WebCrawler.API.Services.Interfaces
 {
     public interface IProductsCrawlerService
     {
-        public Task<List<Products>> GetSSD();
-        public Task<List<Products>> GetRAM();
-        public Task<List<Products>> GetMotherBoard();
-        public Task<List<Products>> GetHD();
-        public Task<List<Products>> GetGabinete();
+        public List<Products> GetSSD();
+        public List<Products> GetRAM();
+        public List<Products> GetMotherBoard();
+        public List<Products> GetHD();
+        public List<Products> GetHeadset();
+        public List<Products> GetGabinete();
     }
 }

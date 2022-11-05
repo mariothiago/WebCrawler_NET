@@ -15,22 +15,24 @@ namespace WebCrawler.API.Controllers
         {
             _service = service;
         }
-        // GET
+
         [HttpGet]
-        public async Task<IActionResult> GetAllAnotations(string product)
+        public IActionResult GetAllAnotations(string product)
         {
             try
             {
                 var data = new List<Products>();
 
                 if (product == "SSD" || product == "ssd")
-                    data = await _service.GetSSD();
+                    data = _service.GetSSD();
                 else if (product == "ram" || product == "RAM")
-                    data = await _service.GetRAM();
+                    data = _service.GetRAM();
                 else if (product == "placa")
-                    data = await _service.GetMotherBoard();
+                    data = _service.GetMotherBoard();
                 else if (product == "hd" || product == "HD")
-                    data = await _service.GetHD();
+                    data = _service.GetHD();
+                else if(product == "headset" || product == "Headset")
+                    data = _service.GetHeadset();
 
                 return Ok(data);
             }
